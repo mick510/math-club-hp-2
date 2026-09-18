@@ -1,0 +1,62 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    height: 40px;
+    background-color: white;
+}
+
+header a {
+    font-size: 14px;
+    text-decoration: none;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+.this-page {
+    text-decoration: underline;
+}
+
+.header-image {
+    height: 24px;
+    aspect-ratio: 1/1;
+}
+
+
+/*
+big header stuff
+*/
+
+.big-nav {
+    display: flex;
+    width: 100%;
+    max-width: 990px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.menu-options-container {
+    display: flex;
+    align-items: center;
+}
+
+.menu-options {
+    display: none;
+}
+
+/*
+small header stuff
+*/
+
+.small-header {
+    display: none;
+}
+
+.small-nav {
+    display: none;
+}

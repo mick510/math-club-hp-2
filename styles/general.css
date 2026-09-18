@@ -1,0 +1,11 @@
+body {
+    margin: 0px;
+}
+
+main {
+    padding-top: 40px; /*height of header*/
+}
+
+.placeholder {
+    width: 100%;
+}
