@@ -1,7 +1,5 @@
 header {
     display: flex;
-    align-items: center;
-    justify-content: center;
     position: fixed;
     z-index: 100;
     width: 100%;
@@ -36,17 +34,29 @@ big header stuff
     display: flex;
     width: 100%;
     max-width: 990px;
-    align-items: center;
     justify-content: space-evenly;
+    align-items: center;
+    margin: auto;
 }
 
 .menu-options-container {
     display: flex;
-    align-items: center;
+    flex-direction: column;
 }
 
 .menu-options {
     display: none;
+}
+
+/*make menu-options appear*/
+.menu-options-container:hover .menu-options {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    z-index: 90;
+    top: 45px;
+    background-color: white;
+    padding: 7px;
 }
 
 /*
