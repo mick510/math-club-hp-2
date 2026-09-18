@@ -9,15 +9,16 @@ header {
 
 header a {
     font-size: 14px;
-    text-decoration: none;
+    text-decoration: underline transparent;
+    transition: text-decoration 0.15s ease;
 }
 
 header a:hover {
-    text-decoration: underline;
+    text-decoration-color: blue;
 }
 
 .this-page {
-    text-decoration: underline;
+    text-decoration-thickness: 1px;
 }
 
 .header-image {
@@ -32,31 +33,39 @@ big header stuff
 
 .big-nav {
     display: flex;
-    width: 100%;
-    max-width: 990px;
     justify-content: space-evenly;
     align-items: center;
+    width: 100%;
+    max-width: 990px;
+    height: 100%;
     margin: auto;
 }
 
 .menu-options-container {
     display: flex;
     flex-direction: column;
+    position: relative;
+    justify-content: center;
+    height: 100%;
 }
 
 .menu-options {
-    display: none;
-}
-
-/*make menu-options appear*/
-.menu-options-container:hover .menu-options {
     display: flex;
     flex-direction: column;
-    position: fixed;
-    z-index: 90;
-    top: 45px;
+    position: absolute;
+    top: 80%;
+    left: 0;
+    width: 100px;
     background-color: white;
+    border: 1px solid grey;
     padding: 7px;
+    opacity: 0%;
+    transition: opacity 0.15s;
+}
+
+.menu-options-container:hover .menu-options {
+    display: flex;
+    opacity: 100%;
 }
 
 /*
