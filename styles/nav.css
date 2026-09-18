@@ -50,8 +50,7 @@ big header stuff
 }
 
 .menu-options {
-    display: flex;
-    flex-direction: column;
+    display: none;
     position: absolute;
     top: 80%;
     left: 0;
@@ -65,6 +64,7 @@ big header stuff
 
 .menu-options-container:hover .menu-options {
     display: flex;
+    flex-direction: column;
     opacity: 100%;
 }
 
