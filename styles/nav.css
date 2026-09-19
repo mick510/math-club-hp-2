@@ -3,17 +3,18 @@ header {
     position: fixed;
     z-index: 100;
     width: 100%;
-    height: 40px;
+    height: 70px;
     background-color: white;
 }
 
-header a {
+header a, .small-nav a {
     font-size: 14px;
+    margin: 3px;
     text-decoration: underline transparent;
     transition: text-decoration 0.15s ease;
 }
 
-header a:hover {
+header a:hover, .small-nav a:hover {
     text-decoration-color: blue;
 }
 
@@ -22,7 +23,7 @@ header a:hover {
 }
 
 .header-image {
-    height: 24px;
+    height: 35px;
     aspect-ratio: 1/1;
 }
 
@@ -54,9 +55,10 @@ big header stuff
     position: absolute;
     top: 80%;
     left: 0;
-    width: 100px;
+    width: 125px;
     background-color: white;
     border: 1px solid grey;
+    border-radius: 10px;
     padding: 7px;
     opacity: 0%;
     transition: opacity 0.15s;
@@ -68,14 +70,63 @@ big header stuff
     opacity: 100%;
 }
 
-/*
-small header stuff
-*/
-
 .small-header {
     display: none;
 }
 
+/*
+changing between big-nav/small-header
+*/
+
+@media (max-width: 650px) {
+    .big-nav {
+        display: none;
+    }
+
+    .small-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 15px;
+    }
+
+    .horizontal-header-image {
+        height: 40px;
+        width: 80px;
+    }
+
+    .open-side-nav {
+        background-color: transparent;
+        border-style: none;
+    }
+}
+
 .small-nav {
     display: none;
+    flex-direction: column;
+    justify-content: center;
+    position: fixed;
+    z-index: 200;
+    width: 200px;
+    height: 100%;
+    padding: 15px;
+    background-color: grey;
+}
+
+.small-nav button {
+    display: inline-flex;
+    align-items: center;
+    height: auto;
+    text-align: left;
+    font-size: 14px;
+    color: blue;
+    background-color: transparent;
+    border-style: none;
+}
+
+.triangle {
+    height: 10px;
+    aspect-ratio: 1/1;
+    margin-left: 6px;
 }
