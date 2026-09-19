@@ -114,6 +114,12 @@ changing between big-nav/small-header
     background-color: grey;
 }
 
+.side-nav-menu-options {
+    display: none;
+    flex-direction: column;
+    padding-left: 10px;
+}
+
 .small-nav button {
     display: inline-flex;
     align-items: center;
