@@ -115,7 +115,7 @@ changing between big-nav/small-header
     opacity: 0;
     transform: translateX(-100%);
     pointer-events: none;
-        transition: opacity 0.3s ease, transform 0.3s ease;
+    transition: opacity 0.3s ease, transform 0.3s ease;
 
 }
 
