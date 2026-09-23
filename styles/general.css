@@ -28,3 +28,7 @@ a:hover {
     margin-top: 0px;
     margin-bottom: 12px;
 }
+
+p {
+    margin: 0px;
+}

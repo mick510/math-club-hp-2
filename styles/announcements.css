@@ -1,0 +1,41 @@
+.announcement-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: auto;
+    width: 80%;
+}
+
+.announcement {
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+}
+
+.announcement-deets {
+    display: flex;
+    flex-direction: row;
+}
+
+.month-date {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3px 10px;
+}
+
+.month {
+    font-size: 12px;
+}
+
+.date {
+    font-size: 24px;
+    font-style: bold;
+}
+
+.announcement-image {
+    width: 100%;
+}
+
+.announcement-title {
+    font-size: 20px;
+}
