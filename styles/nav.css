@@ -14,13 +14,19 @@ header a, .small-nav a {
     transition: text-decoration 0.15s ease;
 }
 
+header a:hover, .small-nav a:hover {
+    text-decoration-color: blue;
+}
+
 .this-page {
     text-decoration: underline;
+    text-decoration-color: black;
     text-decoration-thickness: 1px;
 }
 
-header a:hover, .small-nav a:hover {
-    text-decoration-color: blue;
+.small-nav .this-page {
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
 }
 
 .header-image {
