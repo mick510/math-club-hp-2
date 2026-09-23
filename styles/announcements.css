@@ -1,8 +1,7 @@
 .announcement-grid {
     display: grid;
     grid-template-columns: auto auto;
-    margin: auto;
-    width: 80%;
+    width: 100%;
 }
 
 .announcement {
@@ -39,4 +38,21 @@
 .announcement-title {
     margin: auto 0px;
     font-size: 18px;
+}
+
+@media (min-width: 900px) {
+    .announcement-grid {
+        grid-template-columns: auto auto auto;
+    }
+}
+
+@media (max-width: 550px) {
+    .announcement-grid {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.toolbar {
+    display: flex;
 }
