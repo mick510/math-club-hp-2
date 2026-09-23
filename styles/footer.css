@@ -8,6 +8,45 @@ footer {
 
 .big-footer {
     display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.footer-image {
+    width: 100px;
+}
+
+.updates {
+    width: 400px;
+}
+
+.footer-title {
+    display: block;
+    margin-bottom: 15px;
+    margin-top: 0px;
+    font-size: 20px;
+}
+
+.update {
+    font-size: 15px;
+}
+
+.social-media-list-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-media-list {
+    display: flex;
+}
+
+.social-media-image {
+    width: 20px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    margin: 0px 5px;
 }
 
 .small-footer {
