@@ -10,30 +10,16 @@ header {
 header a, .small-nav a {
     font-size: 14px;
     margin: 3px;
-    text-decoration: underline transparent;
-    transition: text-decoration 0.15s ease;
-}
-
-header a:hover, .small-nav a:hover {
-    text-decoration-color: blue;
 }
 
 .this-page {
     text-decoration: underline;
-    text-decoration-color: black;
-    text-decoration-thickness: 1px;
-}
-
-.small-nav .this-page {
-    text-decoration: underline;
-    text-decoration-thickness: 1px;
 }
 
 .header-image {
     height: 35px;
     aspect-ratio: 1/1;
 }
-
 
 /*
 big header stuff
