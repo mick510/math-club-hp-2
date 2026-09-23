@@ -1,0 +1,28 @@
+.execs-grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.exec-profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 8px;
+}
+
+.pfp {
+    width: 80px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+}
+
+.position {
+    margin: 0px;
+    font-size: 12px;
+}
+
+.name {
+    margin: 0px;
+    font-size: 18px;
+}
