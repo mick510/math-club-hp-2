@@ -29,6 +29,10 @@ a:hover {
     margin-bottom: 12px;
 }
 
+.heading2 {
+    font-size: 18px;
+}
+
 p {
     margin: 0px;
 }

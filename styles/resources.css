@@ -1,0 +1,32 @@
+.toolbar {
+    display: flex;
+}
+
+.resource-grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.resource {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.resource-thumbnail {
+    width: 100%;
+}
+
+.resource-title {
+    font-size: 18px;
+}
+
+.resource-preview {
+    font-size: 14px;
+}
+
+@media (max-width: 1000px) {
+    .resource-grid {
+        display: block;
+    }
+}
