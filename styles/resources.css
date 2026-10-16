@@ -1,3 +1,23 @@
+.toggle-div {
+    display: flex;
+    flex-direction: row;
+}
+
+.toggle-triangle {
+    width: 18px;
+    height: 18px;
+    margin-left: 10px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.toggle {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+
 .toolbar {
     display: flex;
 }
